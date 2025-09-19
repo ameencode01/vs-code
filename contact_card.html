@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Card</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                overflow: auto;
+            }
+
+            header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: #004080;
+                color: white;
+                text-align: center;
+                padding: 15px 0;
+                font-size: 1.5rem;
+                z-index: 1000;
+            }
+
+            .profile-section {
+                margin-top: 80px; 
+                position: relative;
+                padding: 20px;
+                max-width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #f5f5f5;
+                border: 1px solid #ccc;
+                overflow: auto;
+                min-height: 300px;
+            }       
+
+            img {
+                float: left;
+                width: 150px;
+                height: 150px;
+                margin-right: 20px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .profile-content {
+                overflow: hidden;
+                padding-right: 200px;
+            }
+
+            .profile-content h2 {
+                margin-bottom: 10px;
+                font-size: 1.8rem;
+            }
+
+            .profile-content h3 {
+                margin-bottom: 10px;
+                font-weight: normal;
+                color: #555;
+            }
+
+            .profile-content p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .contact-info {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 160px;
+                background-color: #e6f2ff;
+                border: 1px solid #ccc;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .contact-info h4 {
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+            }
+
+            .contact-info p {
+                margin-bottom: 5px;
+                font-size: 0.95rem;
+                word-wrap: break-word;
+            }
+
+            .divider {
+                position: absolute;
+                top: 20px;
+                bottom: 20px;
+                right: 200px;
+                width: 1px;
+                background-color: #999;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Company Contact Card</header>
+        <div class="profile-section">
+            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" height="150" width="150" alt="Profile Picture">
+            <div class="profile-content">
+                <h2>Sarah Johnson</h2>
+                <h3>Software Engineer</h3>
+                <p>Sarah is a skilled full-stack developer with 5 years of experience building web applications. She specialices in React and Node.js, and enjoys solving complex problems with clan, efficient code.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="contact-info">
+                <h4>Contact Info</h4>
+                <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+                <p><i class="fa-solid fa-envelope"></i> sarah.johnson@gmail.com</p>
+            </div>
+        </div>
+    </body>
+</html>
