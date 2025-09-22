@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blog Page</title>
+        <style>
+            .blog-post {
+                width: 60%;
+                margin: 40px auto;
+                padding: 20px;
+                font-family: 'Segoe UI', sans-serif;
+                line-height: 1.6;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+            }
+            .blog-post h1 {
+                font-size: 32px;
+                margin-bottom: 5px;
+            }
+            .author {
+                font-style: italic;
+                color: #555;
+                margin-bottom: 20px;
+            }    
+            .content p::first-line {
+                font-weight: bold;
+            }
+            .content p::first-letter {
+                font-size: 2em;
+                color: #004080;
+                float: left;
+                line-height: 1;
+                padding-right: 6px;
+            }
+            blockquote {
+                margin: 20px 0;
+                padding: 10px 20px;
+                background: #f9f9f9;
+                border-left: 4px solid #ccc;
+                font-style: italic;
+                position: relative;
+            }
+
+            blockquote::before {
+                content: "“";
+                font-size: 2rem;
+                color: #999;
+                position: absolute;
+                left: 10px;
+                top: -10px;
+            }
+
+            a:link {
+                color: #3498db;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: #8e44ad;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: #e74c3c;
+            }
+
+            .headers {
+                display: flex;
+                gap: 20px;
+                margin-top: 30px;
+            }
+
+            .headers h4 + h4 {
+                color: #2c3e50;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="blog-post">
+            <h1>The Beauty of Simplicity</h1>
+            <div class="author">By Jane Doe</div>
+            <div class="content">
+                <p>Simplicity in design and life can be both powerful and freeing. It allows us to focus on what really matters and eliminate distractions.</p>
+
+            <blockquote>
+                 Less is more — a principle that resonates across all creative disciplines.
+            </blockquote>
+            <p>To learn more, visit <a href="https://example.com">this article</a>.</p>
+            </div>
+            <div class="headers">
+                <h4>Related Posts</h4>
+                <h4>Editor's Picks</h4>
+            </div>
+        </div>
+    </body>
+</html>
