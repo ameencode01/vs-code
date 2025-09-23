@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product Card</title>
+        <style>
+            .product-card {
+                width: 300px;
+                margin: 40px auto;
+                padding: 20px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1;
+                border: 1px solid grey;
+                background-color: aliceblue;
+                border-radius: 8px;
+                text-align: center;
+            }
+
+            .product-card img {
+                border: 2px solid black;
+                border-radius: 50px 0px;
+                height: 200px;
+                width: 200px;
+            }
+
+            .product-card h2 {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+
+            .product-card p {
+                font-size: 20px;
+                color: green;
+                margin: 10px 0;
+            }
+
+            .product-card button {
+                background-color: blue;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                .product-card {
+                    font-size: small;
+                    margin: 40px auto;
+                    padding: 20x;
+                }
+            }
+
+            @media only screen and (orientation: landscape) {
+                .product-card {
+                    background-color: lightblue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="product-card">
+            <img src="https://i1.adis.ws/i/canon/3454C004_EOS-250D-BLACK-BODY-ONLY_01?w=400&bg=rgb(245,246,246)&fmt=webp&qlt=100&sm=aspect&aspect=1:1" alt="A camera pruct image">
+            <h2>Canon EOS 250D camera Body, Black</h2>
+            <p>68,299.25</p>
+            <button>Buy Now</button>
+        </div>
+    </body>
+</html>
